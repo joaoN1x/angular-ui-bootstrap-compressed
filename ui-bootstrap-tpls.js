@@ -593,7 +593,6 @@ angular.module('ui.bootstrap.carousel', [])
         slides[currentIdx].element.data(SLIDE_DIRECTION, slide.direction);
       }
 
-      $scope.$currentTransition = true;
       $animate.on('addClass', slides[index].element, function(element, phase) {
         if (phase === 'close') {
           $scope.$currentTransition = null;
